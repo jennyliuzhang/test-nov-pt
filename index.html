@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Plot Twisters | K-12 Journey Building Tools for Students and Educators</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.png'>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://use.typekit.net/vbx0ney.css">
+
+	<link rel="stylesheet" href="css/basics.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/home-audio.css">
+	<link rel="stylesheet" href="css/home-path.css">
+	<link rel="stylesheet" href="css/home-modules.css">
+	<link rel="stylesheet" href="css/home-journal.css">
+
+</head>
+
+<body>
+
+	<div id="version-id">
+		<h5><a href="#progress">Under Construction!</a></h5><br>
+		<span class="extra">🏗This site shares our progress so far.</span><br>
+	</div>
+
+	<select id="language">
+	  <option selected="selected" value="english">English</option>
+	  <option value="spanish">Spanish (coming soon!)</option>
+	</select>
+
+	<div class="wrap">
+		<div id="title">
+			<h1>Plot Twisters</h1>
+		</div>
+		<h2 class="tagline">The education technology studio that cares about your journey as a healthy human.</h2>
+
+		<audio id="audio" controls="controls">
+		  <source src="src/audio-intro.mp3" type="audio/mpeg" />
+		</audio>
+
+		<div class="audio">
+			<button id="playAudio" class="inactive" onclick="onPlay()">
+				<span>Play our audio intro!</span>
+			</button>
+			<div id="timeline">
+				<div id="playhead"></div>
+			</div>
+		</div>
+
+		<div class="hero">
+			<div id="floats" data-tilt>
+				<img data-tilt class="chat-right" src="img/chat-right.png" alt="">
+				<img data-tilt class="chat-left" src="img/chat-left.png" alt="">
+				<img data-tilt class="debris" src="img/debris.png" alt="">
+				<img data-tilt class="trail" src="img/trail.png" alt="">
+			</div>
+		</div>
+
+		<div id="folders" class="imgHover">
+			<a href="cookie/index.html">
+				<img class="static" src="img/folders.png" alt="Cookie Trail Files">
+				<img class="hover" src="img/folders-hover.png" alt="Cookie Trail Files">
+				<div class="popup-left hover" style="width:100px;left:-125px;">Play our early demo.</div>
+			</a>
+		</div>
+
+		<div id="email-jenny" class="imgHover">
+			<a href="#footer">
+				<img class="static" src="img/email.png" alt="Email Jenny">
+				<img class="hover" src="img/email-hover.png" alt="Email Jenny">
+				<div class="popup-right hover">Get email updates!</div>
+			</a>
+		</div>
+
+	</div>
+
+		<div class="path">
+			<div class="leftSide"></div>
+			<div class="rightSide"></div>
+
+			<h4>What's your journey? Where's it going?</h4>
+			<!-- <h4>The education technology studio for healthy students.</h4> -->
+			<!-- <h4>The 21st century education technology studio.</h4> -->
+
+			<h2>Plot Twisters makes <span class="highlight">personal journey building tools</span> for K-12 students to reflect on their values, curiosities, and goals over time.</h2>
+
+			<div class="toggleStudentTeacher">
+				<div class="studentsCan"><h2>Students can...</h2></div>
+				<div class="teachersCan"><h2>Teachers can...</h2></div>
+
+				<div class="studentsCanExplained">
+					<div class="prop">
+						<img class="prop-thumb" src="img/studentsCan-1-track.gif" alt="Students can track their personal education journeys on the Plot Twisters platform.">
+						<h6 class="wider">Track their personal education journey</h6>
+					</div>
+					<div class="prop">
+						<img class="prop-thumb" src="img/studentsCan-2-reflect.gif" alt="Students can reflect on their interests and skills with our minigames.">
+						<h6>Reflect on their interests and skills</h6>
+					</div>
+					<div class="prop">
+						<img class="prop-thumb" src="img/studentsCan-3-explore.gif" alt="Students can explore a database of diverse, fulfilled role models.">
+						<h6>Explore journeys of diverse role models</h6>
+					</div>
+					<div class="prop">
+						<img class="prop-thumb" src="img/studentsCan-4-manage.gif" alt="Students can manage and organize their to-do lists and goals in their education journey.">
+						<h6>Manage goals for their journey</h6>
+					</div>
+				</div>
+
+				<div class="teachersCanExplained">
+					<div class="prop">
+						<img class="prop-thumb" src="img/teachersCan-1-follow.gif" alt="Teachers can follow along with their students' learning and reflections in and out of school.">
+						<h6>Follow the journeys of their students</h6>
+					</div>
+					<div class="prop">
+						<img class="prop-thumb" src="img/teachersCan-2-assign.gif" alt="Teachers can better understand their students' habits and skills to customize their teaching.">
+						<h6>Assign projects based on individual needs</h6>
+					</div>
+					<div class="prop">
+						<img class="prop-thumb" src="img/teachersCan-3-support.gif" alt="Teachers can communicate with their students based on how they reflected on a project.">
+						<h6 class="wider">Personally support the growth of each student</h6>
+					</div>
+					<div class="prop">
+						<img class="prop-thumb" src="img/teachersCan-4-talk.gif" alt="Teachers can share with their students diverse role models and pressing challenges currently facing Earth.">
+						<h6 class="wider">Talk about role models and real world challenges</h6>
+					</div>
+				</div>
+			</div>
+
+			<div class="point">
+				<h2>1. &nbsp;&nbsp;Let's catch K-12 classrooms up to the rapidly changing landscape of work.</h2>
+				<p>Plot Twisters is creating fun, imaginative tools to communicate what work <em>really is</em> to students—from tech mastery to social skills. 40% of roles require "creativity" and "complex problem solving," but schools struggle to explain these skills clearly to students. We show them examples of these skills in their real, everyday schoolwork.</p>
+			</div>
+
+			<div class="point">
+				<h2>2. &nbsp;&nbsp;Let's introduce diverse role models and career journeys from an early age.</h2>
+				<p>Dreaming big should be accessible to all students. By exploring diverse role model journeys as they build their own journey, Plot Twisters helps them notice trends in their own values, skills, and roles. We provide a platform for students to discover and set goals.</p>
+			</div>
+
+			<div class="point">
+				<h2>3. &nbsp;&nbsp;Let's make the student the protagonist of their education.</h2>
+				<p>Unlike career and personality tests, Plot Twisters is not prescriptive. Students decide for themselves what their journey is, and where it's going. Plot Twisters empowers students to discover the values, skills, roles, and causes that are meaningful to them.</p>
+			</div>
+
+			<div class="point">
+				<h2>4. &nbsp;&nbsp;Let's "think globally, act locally."</h2>
+				<p>Pressing challenges from environmental waste to health inequity affect every person on Earth, so navigating these issues will be the classwork of the future. Plot Twisters introduces this seed of global citizenship in every student's journey, and serves as an example social enterprise.</p>
+			</div>
+
+			<div class="point">
+				<h2>5. &nbsp;&nbsp;Let's practice using technology safely and healthfully.</h2>
+				<p>As we build tools for digitally sharing education and career stories, Plot Twister is focused on instilling healthy relationships with building identities online. We're preemptive to provide mindful role models, and transparent about our interface design choices.</p>
+			</div>
+
+			<div class="point">
+				<h2>6. &nbsp;&nbsp;Let's design for students and educators by working with them directly.</h2>
+				<p>Plot Twisters is an educational technology studio that treats each school as a long-term client. We know how different every learning environment can be, so we visit and customize our tools specifically for each classroom.</p>
+			</div>
+
+			<h2 class="launchDate"><span class="highlight"><a href="studio@plottwisters.org">We'd love your wisdom! &nbsp;<img src="img/email-inline.png" width="25" alt=""></a></span></h2>
+
+		</div>
+
+		<div class="thinkTank">
+			<h2 class="thinkTankCall"><a href="https://www.notion.so/plottwisters/Plot-Twisters-Think-Tank-6a55f88cdc3b40fc87b0e3f2ce88eb14" target="_blank"><span>Check out our internal Think Tank Knowledgebase. <div class="externalLinkOut"></div></span></a></h2>
+			<a href="https://www.notion.so/plottwisters/Plot-Twisters-Think-Tank-6a55f88cdc3b40fc87b0e3f2ce88eb14" target="_blank"><div class="thinkTankScreen"></div>
+			<div class="thinkTankArrow"  id="progress"></div></a>
+		</div>
+
+		<div class="wrap wrap-underpath">
+		<div class="modules">
+			<h5>Peek at our work-in-progress?</h5>
+			<div class="block demo">
+				<h2>Worksheets & Demo</h2>
+				<h3>Test our ideas on paper and online.</h3>
+				<div class="action-buttons">
+					<div class="printables-tab">
+						<a class="printable">Worksheet Drafts</a>
+						<div class="printables-list">
+							<a href="#" class="printable">Homework Plot Twister</a>
+							<a href="#" class="printable">Quick Foldable</a>
+							<a href="#" class="printable">Long Foldable</a>
+							<a href="#" class="printable">Gift Tagger</a>
+							<a href="#" class="printable">Cookie Trail Calculator</a>
+							<!-- <a href="#" class="printable download-all">Download All</a> -->
+						</div>
+					</div>
+					<a href="https://www.plottwisters.org/games/dist/two-birds-one-stone" target="_blank" class="open">See Demo</a>
+				</div>
+			</div>
+			<div class="block plot-twister-profiles">
+				<h2>Plot Twister Profiles</h2>
+				<h3>Stories of you and your role models.</h3>
+				<div class="action-buttons">
+					<a href="https://www.notion.so/plottwisters/Plot-Twister-Profiles-25d28ab4ce1d46de8cbd554abeca1d72" target="_blank" class="open">Our Notion</a>
+					<a href="https://world.jennyliuzhang.now.sh" target="_blank" class="open">See Development</a>
+				</div>
+			</div>
+				<div class="block gift-tagger">
+					<h2>Gift Tagger</h2>
+					<h3>What are your <strong>personal values</strong>?</h3>
+					<div class="action-buttons">
+						<a href="https://www.notion.so/plottwisters/1-Gift-Tagger-5758442c9906415897963dacc212ed8f" target="_blank" class="open">Our Notion</a>
+					</div>
+				</div>
+				<div class="block hat-counter">
+					<h2>Hat Counter</h2>
+					<h3>What <strong>areas of knowledge</strong> do you practice?</h3>
+					<div class="action-buttons">
+						<a href="https://www.notion.so/plottwisters/2-Hat-Counter-77e79deb1f4c4bef98e674786df4c7e7" target="_blank" class="open">Our Notion</a>
+					</div>
+				</div>
+				<div class="block recipe-mixer">
+					<h2>Recipe Mixer</h2>
+					<h3>What are your <strong>ideal work settings</strong>?</h3>
+					<!-- <h3>Find where your work habits fall on a spectrum.</h3> -->
+					<div class="action-buttons">
+						<a href="https://www.notion.so/plottwisters/3-Recipe-Mixer-e363f04bac6b4eb18f838af00019d1ea" target="_blank" class="open">Our Notion</a>
+					</div>
+				</div>
+				<div class="block cookie-trails">
+					<h2>Cookie Trails</h2>
+					<h3>Explore and manage your <strong>life goals.</strong></h3>
+					<!-- <h3>Visualize and manage <strong>your time spent.</strong></h3> -->
+					<div class="action-buttons">
+						<a href="https://www.notion.so/plottwisters/Cookie-Trails-67000c288b0b4ad6bdd2e2ce0354163b" target="_blank" class="open">Our Notion</a>
+					</div>
+				</div>
+
+
+			<div class="block extra-credit">
+				<h2>Extra Credit</h2>
+				<a href="https://www.notion.so/plottwisters/Plot-Twisters-Think-Tank-6a55f88cdc3b40fc87b0e3f2ce88eb14" target="_blank">
+					<div class="entry">
+						<img style="background: rgba(111, 206, 199, 0.1);" class="thumb" src="img/journal/coffee-tea-560.png">
+						<div class="words">
+							<h2>Read Our Research</h2>
+							<h3>We're always learning.</h3>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://github.com/plottwisters" target="_blank">
+					<div class="entry">
+						<img style="background: rgba(247, 216, 139, 0.1);" class="thumb" src="img/journal/orange-peel-560.png">
+						<div class="words">
+							<h2>Explore Our Codebase</h2>
+							<h3>Engineers at work.</h3>
+						</div>
+					</div>
+				</a>
+
+				<a href="http://www.jenny.world/" target="_blank">
+					<div class="entry" style="border: none;">
+						<img style="background: rgba(203, 153, 224, 0.1);" class="thumb" src="img/journal/flowers-560.png">
+						<div class="words">
+							<h2>Meet Jenny</h2>
+							<h3>Our founder and director.</h3>
+						</div>
+					</div>
+				</a>
+				<div style="clear:both"></div>
+			</div>
+			<div class="block quotes">
+				<h2>Wise Words</h2>
+				<div class="refresh"></div>
+				<blockquote>
+					"<span id="quote"></span>"
+					<div class="byline">&mdash; <span id="person"></span></div>
+				</blockquote>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="footer-wrap">
+			<div class="email-signup">
+					<input type="email" value="" placeholder="Your email address" class="email">
+					<input type="submit" value="Get occasional updates!" name="subscribe" class="submit">
+			</div>
+
+			<span class="email">Our email is <a href="studio@plottwisters.org/">studio@plottwisters.org</a>.</span>
+
+			<span class="copy">&#169; 2019 Plot Twisters. All rights reserved.</span>
+		</div>
+	</div>
+
+<script src="js/jenny.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/tilt.js"></script>
+<script src="js/quotes.js"></script>
+</body>
+
+</html>
